@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11.2%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11.2%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 239 84% 59%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 220 84% 86%;
+  --secondary-foreground: 222 47% 11.2%;
+  --accent: 217 91% 60%;
+  --accent-foreground: 222 47% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 238 94% 82%;
+  --radius: 0.5rem;
+
+  /* Custom colors for priority */
+  --priority-high: 0 84% 60%;
+  --priority-medium: 31 98% 52%;
+  --priority-low: 160 84% 39%;
+
+  /* Custom colors for categories */
+  --category-work: 238 89% 67%;
+  --category-personal: 328 86% 73%;
+  --category-study: 258 90% 66%;
+  --category-health: 160 84% 39%;
+  --category-finance: 31 98% 52%;
+}
+
+.dark {
+  --background: 222 47% 11.2%;
+  --foreground: 210 40% 98%;
+  --muted: 217 33% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --popover: 222 47% 11.2%;
+  --popover-foreground: 210 40% 98%;
+  --card: 222 47% 11.2%;
+  --card-foreground: 210 40% 98%;
+  --border: 217 33% 17.5%;
+  --input: 217 33% 17.5%;
+  --primary: 239 84% 59%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 217 33% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 217 33% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 217.2 32.6% 17.5%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-[#f8fafc] text-foreground;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-[#f1f5f9];
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#cbd5e1] rounded-sm;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#94a3b8];
+  }
+}
