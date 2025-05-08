@@ -14,12 +14,14 @@ export default function Header({ onOpenMobileMenu, onNewTask }: HeaderProps) {
   return (
     <header className="bg-white border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-semibold text-primary">Advanced Todo List</h1>
-        
+        <h1 className="text-2xl font-semibold text-primary">
+          Smart Task Manager
+        </h1>
+
         {/* Mobile menu button */}
-        <Button 
-          variant="ghost" 
-          size="icon" 
+        <Button
+          variant="ghost"
+          size="icon"
           className="lg:hidden"
           onClick={onOpenMobileMenu}
         >
